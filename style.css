@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'youtube';
-  src: url("./assets/fonts/youtube.eot?y7a6ev");
-  src: url("./assets/fonts/youtube.eot?y7a6ev#iefix") format("embedded-opentype"), url("./assets/fonts/youtube.ttf?y7a6ev") format("truetype"), url("./assets/fonts/youtube.woff?y7a6ev") format("woff"), url("./assets/fonts/youtube.svg?y7a6ev#youtube") format("svg");
+  font-family: "tommorrow";
+  src: url("./assets/fonts/tommorrow.eot");
+  src: url("./assetsfonts/tommorrow.eot") format("embedded-opentype"), url("./assetsfonts/tommorrow.ttf") format("truetype"), url("./assets/fonts/tommorrow.woff") format("woff"), url("./assets/fonts/tommorrow.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -355,15 +355,6 @@ ol {
   list-style: none;
   padding-left: 0; }
 
-#root {
-  width: 1100px;
-  margin: 0 auto;
-  padding-top: 20px; }
-  #root h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #282828; }
-
 .list {
   display: flex;
   justify-content: flex-end;
@@ -429,7 +420,7 @@ p {
   position: relative; }
   .input-group .form-input {
     height: 40px;
-    padding-left: 10px; }
+    padding-left: 40px; }
   .input-group .ic-search {
     position: absolute;
     top: 50%;
@@ -438,53 +429,4 @@ p {
     font-size: 20px;
     color: #8c8d96; }
 
-i {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'youtube' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.ico-logoplay:before {
-  content: '\e912';
-  color: #ff0000;
-  font-size: 50px; }
-
-.search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px; }
-  .search-box .ico-logoplay {
-    margin-right: 10px; }
-  .search-box .input-group {
-    flex-grow: 1; }
-
-.video-box {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap; }
-  .video-box .video-list {
-    display: flex;
-    align-items: center;
-    transition: all 0.3s;
-    height: 120px;
-    margin-bottom: 10px;
-    width: calc((100% - 10px) / 2);
-    box-shadow: 4px 5px 15px 2px rgba(0, 0, 0, 0.3); }
-    .video-box .video-list:hover {
-      transform: scale(1.05); }
-    .video-box .video-list:not(:nth-of-type(2n)) {
-      margin-right: 10px; }
-    .video-box .video-list .video-img {
-      height: 100%; }
-    .video-box .video-list .video-description {
-      padding: 15px; }
-
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=style.css.map */

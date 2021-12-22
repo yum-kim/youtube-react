@@ -1,0 +1,14 @@
+// sass-lint:disable-all
+
+@font-face {
+  font-family: 'youtube';
+  src: url('./assets/fonts/youtube.eot?y7a6ev');
+  src: url('./assets/fonts/youtube.eot?y7a6ev#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/youtube.ttf?y7a6ev') format('truetype'),
+    url('./assets/fonts/youtube.woff?y7a6ev') format('woff'),
+    url('./assets/fonts/youtube.svg?y7a6ev#youtube') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

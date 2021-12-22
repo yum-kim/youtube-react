@@ -1,0 +1,45 @@
+// Map = {} (key: value) 데이터 타입 사용
+$flex-map: (
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  stretch: stretch,
+  center: center,
+);
+
+//map 데이터타입, map-get 함수를 사용하지 않으면 이 함수 내에서 if문 사용해서 attribute명 다 직접 지정해야함
+@function _get-flex-value($key) {
+  @return map-get($flex-map, $key);
+
+  //map 안쓰면? 이런 식으로 내부에서 조건문 직접 분기 필요
+  //   @if ($key == start) {
+  //     @return flex-start;
+  //   }
+  //   @if ($key == end) {
+  //     @return flex-end;
+  //   }
+}
+
+@mixin flexbox($jc: center, $ai: center) {
+  display: flex;
+  justify-content: _get-flex-value($jc);
+  align-items: _get-flex-value($ai);
+}
+
+@mixin inline-flexbox($jc: center, $ai: center) {
+  display: inline-flex;
+  justify-content: _get-flex-value($jc);
+  align-items: _get-flex-value($ai);
+}
+
+@mixin column-flexbox($jc: center, $ai: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: _get-flex-value($jc);
+  align-items: _get-flex-value($ai);
+}
+
+.list {
+  @include flexbox(end, start);
+}

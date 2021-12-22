@@ -1,0 +1,13 @@
+.search-box {
+  @include flexbox;
+
+  margin-bottom: 20px;
+
+  .ico-logoplay {
+    margin-right: 10px;
+  }
+
+  .input-group {
+    flex-grow: 1;
+  }
+}
