@@ -1,0 +1,32 @@
+.video {
+  // @include (flex-start, center);
+  width: calc((100% - 10px) / 2);
+  height: 120px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 4px 5px 15px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:not(:nth-of-type(2n)) {
+    margin-right: 10px;
+  }
+
+  .thumbnail {
+    height: 100%;
+  }
+
+  .textbox {
+    padding: 15px;
+
+    .title {
+      margin-bottom: 0;
+    }
+    .channel {
+      font-size: 0.9em;
+    }
+  }
+}
