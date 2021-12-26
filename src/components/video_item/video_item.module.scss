@@ -1,5 +1,7 @@
 .video {
-  // @include (flex-start, center);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   width: calc((100% - 10px) / 2);
   height: 120px;
   margin-bottom: 10px;
@@ -24,6 +26,10 @@
 
     .title {
       margin-bottom: 0;
+      font-size: 1em;
+      font-weight: 700;
+      line-height: 1.2em;
+      color: #000;
     }
     .channel {
       font-size: 0.9em;
