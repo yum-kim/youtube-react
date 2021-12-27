@@ -1,4 +1,4 @@
-.header {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,11 +7,14 @@
 
   .title {
     font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
   }
 
   .search {
     display: flex;
     align-items: center;
+    width: 100%;
 
     .ico-logoplay {
       margin-right: 10px;

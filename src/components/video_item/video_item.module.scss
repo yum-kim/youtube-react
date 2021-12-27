@@ -24,6 +24,13 @@
   .textbox {
     padding: 15px;
 
+    * {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -moz-box-orient: vertical;
+    }
+
     .title {
       margin-bottom: 0;
       font-size: 1em;
