@@ -9,6 +9,14 @@
   box-shadow: 4px 5px 15px 2px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
 
+  &.grid {
+    width: calc(50% - 10px);
+  }
+
+  &.list {
+    width: 100%;
+  }
+
   &:hover {
     transform: scale(1.05);
   }
@@ -22,7 +30,9 @@
   }
 
   .textbox {
+    height: 100%;
     padding: 15px;
+    overflow: hidden;
 
     * {
       display: -webkit-box;
