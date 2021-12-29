@@ -1,7 +1,7 @@
-import { useRef } from 'react';
+import { useRef, memo } from 'react';
 import './search_header.scss';
 
-const SearchHeader = ({ onSearch }) => {
+const SearchHeader = memo(({ onSearch }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
@@ -34,6 +34,6 @@ const SearchHeader = ({ onSearch }) => {
       </div>
     </header>
   );
-};
+});
 
 export default SearchHeader;
