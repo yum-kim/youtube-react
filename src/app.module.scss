@@ -1,15 +1,25 @@
 .app {
   max-width: 80rem;
+
+  .content {
+    display: flex;
+  }
+
+  .detail {
+    flex: 1 1 70%;
+  }
+
+  .list {
+    flex: 1 1 30%;
+  }
 }
 
-.content {
-  display: flex;
-}
+@media screen and (max-width: 48rem) {
+  .content {
+    flex-direction: column;
+  }
 
-.detail {
-  flex: 1 1 70%;
-}
-
-.list {
-  flex: 1 1 30%;
+  .detail {
+    margin-bottom: 2rem;
+  }
 }
